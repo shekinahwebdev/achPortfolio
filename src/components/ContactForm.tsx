@@ -49,7 +49,7 @@ const ContactForm = () => {
   return (
     <motion.form
       onSubmit={handleSubmit}
-      className="space-y-6 max-w-2xl mx-auto"
+      className="space-y-3 max-w-2xl mx-auto"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -62,7 +62,7 @@ const ContactForm = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <label className="block text-sm font-semibold mb-3 text-gray-300">
+        <label className="block text-sm font-semibold mb-2 text-gray-300">
           Full Name
         </label>
         <input
@@ -72,7 +72,7 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="John Doe"
           required
-          className="w-full px-6 py-3 rounded-lg bg-dark-800 border border-purple-500/20 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+          className="w-full bg-transparent border-b border-gray-300 py-2 text-sm text-black placeholder:text-sm placeholder-gray-400 focus:outline-none focus:border-black transition"
         />
       </motion.div>
 
@@ -83,7 +83,7 @@ const ContactForm = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <label className="block text-sm font-semibold mb-3 text-gray-300">
+        <label className="block text-sm font-semibold mb-2 text-gray-300">
           Email Address
         </label>
         <input
@@ -93,7 +93,7 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder="john@example.com"
           required
-          className="w-full px-6 py-3 rounded-lg bg-dark-800 border border-purple-500/20 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300"
+          className="w-full bg-transparent border-b border-gray-300 py-2 text-sm text-black placeholder:text-sm placeholder-gray-400 focus:outline-none focus:border-black transition"
         />
       </motion.div>
 
@@ -104,7 +104,7 @@ const ContactForm = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
         viewport={{ once: true }}
       >
-        <label className="block text-sm font-semibold mb-3 text-gray-300">
+        <label className="block text-sm font-semibold mb-2 text-gray-300">
           Message
         </label>
         <textarea
@@ -114,7 +114,7 @@ const ContactForm = () => {
           placeholder="Tell me about your project..."
           required
           rows={6}
-          className="w-full px-6 py-3 rounded-lg bg-dark-800 border border-purple-500/20 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-300 resize-none"
+          className="w-full bg-transparent border-b border-gray-300 py-2 text-sm text-black placeholder:text-sm placeholder-gray-400 focus:outline-none focus:border-black transition"
         />
       </motion.div>
 
@@ -143,7 +143,7 @@ const ContactForm = () => {
       <motion.button
         type="submit"
         disabled={status === "loading"}
-        className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        className="bg-black text-white px-10 py-4 text-sm uppercase font-semibold tracking-wider hover:bg-gray-800 transition"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         initial={{ opacity: 0 }}
