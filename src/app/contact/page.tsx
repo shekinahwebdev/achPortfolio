@@ -3,12 +3,7 @@
 import ContactForm from "@/src/components/ContactForm";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 
 const Contact = () => {
