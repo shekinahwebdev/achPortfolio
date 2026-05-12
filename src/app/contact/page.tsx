@@ -60,7 +60,7 @@ const Contact = () => {
           {/* Right Side Image */}
           <div className="bg-[#efefef] border-t lg:border-t-0 lg:border-l border-gray-200 flex items-center justify-center min-h-[400px]">
             <img
-              src="/profile.jpeg"
+              src="/profile1.jpeg"
               alt="Map"
               className="w-full h-full object-cover"
             />

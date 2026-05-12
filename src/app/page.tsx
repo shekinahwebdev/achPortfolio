@@ -111,7 +111,7 @@ export default function Page() {
               >
                 <div className="relative w-full max-w-[640px] h-full min-h-[540px] lg:min-h-screen">
                   <Image
-                    src="/profile.jpeg"
+                    src="/profile1.jpeg"
                     alt="Portrait of the graphic designer"
                     fill
                     priority
