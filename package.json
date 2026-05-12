@@ -27,10 +27,6 @@
     "typescript": "6.0.3"
   },
   "engines": {
-<<<<<<< HEAD
     "node": "24.x"
-=======
-    "node": "18.x"
->>>>>>> e970a62 (feat: add ContactForm, Footer, ProjectCard, ServiceCard components and animations)
   }
 }
