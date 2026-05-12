@@ -77,11 +77,26 @@ const Contact = () => {
 
           <div className="flex flex-wrap gap-6">
             {[
-              { name: "WhatsApp", href: "#", icon: FaWhatsapp },
-              { name: "TikTok", href: "#", icon: SiTiktok },
-              { name: "LinkedIn", href: "#", icon: FaLinkedinIn },
-              { name: "Instagram", href: "#", icon: FaInstagram },
-              { name: "Facebook", href: "#", icon: FaFacebookF },
+              {
+                name: "WhatsApp",
+                href: "https://wa.me/0556007170",
+                icon: FaWhatsapp,
+              },
+              {
+                name: "TikTok",
+                href: "https://www.tiktok.com/@acheva.graphix?_r=1&_t=ZS-96HpAwCpJWS",
+                icon: SiTiktok,
+              },
+              {
+                name: "LinkedIn",
+                href: "https://www.linkedin.com/in/gideon-kanneh-b66859400/",
+                icon: FaLinkedinIn,
+              },
+              {
+                name: "Instagram",
+                href: "https://www.instagram.com/achevagraphix?igsh=MXVxYWx1Z3dpNjF3MA==",
+                icon: FaInstagram,
+              },
             ].map((s) => {
               const Icon = s.icon as any;
               return (
