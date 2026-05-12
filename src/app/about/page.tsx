@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const About = () => {
   const skills = [
-    { name: "Adobe Photoshop", img: "/profile.jpeg" },
-    { name: "Figma", img: "/figma.png" },
-    { name: "Adobe Illustrator", img: "/illustrator.png" },
-    { name: "Adobe Photoshop", img: "/photoshop.png" },
-    { name: "Adobe Photoshop", img: "/photoshop.png" },
+    { name: "Adobe Photoshop", img: "/adobe.png" },
+    { name: "Adobe Illustrator", img: "/adobe-illustrator.png" },
+    { name: "Canva", img: "/canva.png" },
+    { name: "CapCut", img: "/capcut.png" },
+    { name: "Premiere Pro", img: "/premiere-pro.png" },
   ];
 
   const stats = [
@@ -62,7 +62,7 @@ const About = () => {
 
           <Link
             href="/about"
-            className="text-sm text-black font-semibold uppercase text-blue-500"
+            className="text-sm text-black font-semibold uppercase  text-[#123788]"
           >
             About
           </Link>
@@ -86,11 +86,11 @@ const About = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl lg:text-6xl font-extrabold leading-tight text-gray-900 mt-5">
+          <h3 className="text-3xl lg:text-6xl text-center lg:text-left font-extrabold leading-tight text-gray-900 mt-5">
             A Graphic Designer
           </h3>
 
-          <p className="mt-8 text-lg leading-9 text-gray-600">
+          <p className="mt-8 text-lg leading-9 text-gray-600  text-center lg:text-left">
             <span className="font-bold text-gray-900">
               Founder of Acheva Graphix
             </span>
@@ -100,23 +100,23 @@ const About = () => {
           </p>
 
           {/* Info */}
-          <div className="grid sm:grid-cols-2 gap-8 mt-12">
+          <div className="grid sm:grid-cols-2 gap-8 mt-12  text-center lg:text-left">
             <div className="space-y-5">
               <p className="text-lg">
                 <span className="font-bold text-black">Name:</span>{" "}
-                <span className="text-blue-500 font-semibold">
+                <span className=" text-[#123788] font-semibold">
                   Gideon Kanneh
                 </span>
               </p>
 
               <p className="text-lg">
                 <span className="font-bold text-black">Experience:</span>{" "}
-                <span className="text-blue-500 font-semibold">1+ Years</span>
+                <span className=" text-[#123788] font-semibold">1+ Years</span>
               </p>
 
               <p className="text-lg">
                 <span className="font-bold text-black">Address:</span>{" "}
-                <span className="text-blue-500 font-semibold">
+                <span className=" text-[#123788] font-semibold">
                   Accra, Ghana
                 </span>
               </p>
@@ -125,19 +125,19 @@ const About = () => {
             <div className="space-y-5">
               <p className="text-lg">
                 <span className="font-bold text-black">Freelance:</span>{" "}
-                <span className="text-blue-500 font-semibold">Available</span>
+                <span className=" text-[#123788] font-semibold">Available</span>
               </p>
 
               <p className="text-lg">
                 <span className="font-bold text-black">Email:</span>{" "}
-                <span className="text-blue-500 font-semibold break-all">
-                  hello@gideondesign.com
+                <span className=" text-[#123788] font-semibold break-all">
+                  Kannehgideon7@gmail.com
                 </span>
               </p>
 
               <p className="text-lg">
                 <span className="font-bold text-black">Phone:</span>{" "}
-                <span className="text-blue-500 font-semibold">
+                <span className=" text-[#123788] font-semibold">
                   +233 55 600 7170
                 </span>
               </p>
@@ -156,7 +156,7 @@ const About = () => {
               viewport={{ once: true }}
               className="bg-white p-10 min-h-[240px] flex flex-col items-center justify-center shadow-md border border-gray-200"
             >
-              <h3 className="text-3xl font-extrabold text-blue-500">
+              <h3 className="text-3xl font-extrabold  text-[#123788]">
                 {stat.number}
               </h3>
 
@@ -185,7 +185,7 @@ const About = () => {
       {/* Skills Section */}
       <div className="mt-32">
         <div className="text-center">
-          <p className="uppercase tracking-[0.3em] text-sm font-bold text-blue-500">
+          <p className="uppercase tracking-[0.3em] text-sm font-bold  text-[#123788]">
             My Tools
           </p>
           <p className="text-2xl font-extrabold text-gray-900 mt-4">
@@ -193,7 +193,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10 mt-20">
+        <div className="grid grid-cols-3 lg:grid-cols-5 gap-6 mt-20">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
@@ -202,15 +202,12 @@ const About = () => {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center justify-between mb-4">
-                <h4 className="font-bold uppercase text-xl text-gray-800">
-                  {skill.name}
-                </h4>
+              <div className="flex items-center justify-center mb-4">
                 <Image
                   src={skill.img}
                   alt={skill.name}
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                 />
               </div>
             </motion.div>
@@ -221,7 +218,7 @@ const About = () => {
       {/* Experience Section */}
       <div className="mt-32">
         <div className="text-center">
-          <p className="uppercase tracking-[0.3em] text-sm font-bold text-blue-500">
+          <p className="uppercase tracking-[0.3em] text-sm font-bold text-[#123788]">
             Experience
           </p>
 

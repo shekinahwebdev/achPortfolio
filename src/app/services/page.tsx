@@ -29,7 +29,7 @@ const Services = () => {
     },
     {
       icon: <HiSquares2X2 />,
-      title: "UI/UX Design",
+      title: "Product Design",
       description:
         "User-centered interface and experience design for web and mobile applications",
     },
@@ -47,7 +47,7 @@ const Services = () => {
     },
     {
       icon: <HiClock />,
-      title: "Web Design",
+      title: "Flyer & Poster Design",
       description:
         "Beautiful, responsive website designs that convert visitors into customers",
     },
@@ -66,7 +66,7 @@ const Services = () => {
 
           <Link
             href="/services"
-            className="text-sm text-black font-semibold uppercase text-blue-500"
+            className="text-sm text-black font-semibold uppercase  text-[#123788]"
           >
             Services
           </Link>

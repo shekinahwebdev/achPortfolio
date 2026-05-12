@@ -52,7 +52,7 @@ const Home = () => {
 
           <div className="max-w-xl pt-10 lg:pt-0 lg:-translate-y-8">
             <motion.p
-              className="mb-5 text-sm sm:text-base font-extrabold uppercase tracking-[0.35em] text-blue-500"
+              className="mb-5 text-sm sm:text-base font-extrabold uppercase tracking-[0.35em]  text-[#123788]"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -88,7 +88,7 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.36 }}
             >
               <motion.button
-                className="inline-flex items-center gap-3 bg-blue-500 px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-lg shadow-black/10 transition-transform"
+                className="inline-flex items-center gap-3 bg-[#123788] px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-lg shadow-black/10 transition-transform"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setIsMenuOpen(false)}
@@ -130,7 +130,7 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className="relative min-h-[540px] lg:min-h-screen overflow-hidden bg-blue-500"
+          className="relative min-h-[540px] lg:min-h-screen overflow-hidden bg-[#123788]"
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, delay: 0.05 }}
@@ -184,7 +184,7 @@ const Home = () => {
                   <li key={label}>
                     <Link
                       href={href as string}
-                      className={`block text-left transition-colors ${idx === 0 ? "text-blue-500 font-extrabold text-sm" : "text-gray-700 font-semibold text-sm"}`}
+                      className={`block text-left transition-colors ${idx === 0 ? " text-[#123788] font-extrabold text-sm" : "text-gray-700 font-semibold text-sm"}`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {label}

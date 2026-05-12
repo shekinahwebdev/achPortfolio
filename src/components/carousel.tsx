@@ -20,7 +20,6 @@ export default function ExperienceCarousel({
 
   return (
     <div className="mt-20 flex flex-col items-center">
-      {/* CARD AREA */}
       <div className="relative w-full max-w-2xl h-[320px] flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
@@ -31,7 +30,7 @@ export default function ExperienceCarousel({
             transition={{ duration: 0.4 }}
             className="w-full bg-white border p-8 shadow-sm max-w-[400px]"
           >
-            <p className="text-blue-500 font-bold uppercase tracking-wider">
+            <p className=" text-[#123788] font-bold uppercase tracking-wider">
               {item.year}
             </p>
 
@@ -48,16 +47,14 @@ export default function ExperienceCarousel({
         </AnimatePresence>
       </div>
 
-      {/* BUTTONS */}
       <div className="flex gap-6 mt-8">
         <button
           onClick={prev}
-          className="px-5 py-2 border rounded hover:bg-gray-100"
+          className="border rounded-full hover:bg-gray-100 w-5 h-5"
         ></button>
-
         <button
           onClick={next}
-          className="px-5 py-2 bg-black text-white rounded hover:opacity-80"
+          className="bg-black rounded-full text-white hover:opacity-80 w-5 h-5"
         ></button>
       </div>
     </div>

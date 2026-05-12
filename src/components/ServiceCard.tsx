@@ -45,7 +45,7 @@ const ServiceCard = ({
       </div>
 
       {/* Hover line effect */}
-      <div className="absolute bottom-0 left-0 w-0 h-1 bg-blue-500 group-hover:w-full transition-all duration-500" />
+      <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#123788] group-hover:w-full transition-all duration-500" />
     </motion.div>
   );
 };

@@ -6,28 +6,20 @@ import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi2";
 
 export default function Page() {
-  // useEffect(() => {
-  //   const onKey = (e: KeyboardEvent) => {
-  //     if (e.key === "Escape") setIsMenuOpen(false);
-  //   };
-  //   window.addEventListener("keydown", onKey);
-  //   return () => window.removeEventListener("keydown", onKey);
-  // }, []);
-
   return (
     <>
       <main>
         <section id="home" className="min-h-screen relative overflow-hidden">
           <div className="grid min-h-screen grid-cols-1 lg:grid-cols-[1.05fr_0.95fr]">
             <motion.div
-              className="relative flex flex-col justify-center bg-white border text-dark-950 px-6 sm:px-10 lg:px-14 py-6 lg:py-8"
+              className="relative flex flex-col justify-center bg-white border text-dark-950 px-6 sm:px-10 lg:px-14 py-6 lg:py-8 pb-24 lg:pb-8"
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
             >
               <div className="max-w-xl pt-10 lg:pt-0 lg:-translate-y-8">
                 <motion.p
-                  className="mb-5 text-sm sm:text-base font-extrabold uppercase tracking-[0.35em] text-blue-500"
+                  className="mb-5 text-sm sm:text-base font-extrabold uppercase tracking-[0.35em]  text-[#123788]"
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
@@ -63,7 +55,7 @@ export default function Page() {
                   transition={{ duration: 0.6, delay: 0.36 }}
                 >
                   <motion.button
-                    className="inline-flex items-center gap-3 bg-blue-500 px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-lg shadow-black/10 transition-transform"
+                    className="inline-flex items-center gap-3 bg-[#123788] px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-lg shadow-black/10 transition-transform"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -93,7 +85,7 @@ export default function Page() {
               </div>
 
               <motion.p
-                className="text-xs sm:text-sm text-dark-900/45 absolute bottom-6 lg:bottom-8 left-6 sm:left-10 lg:left-14"
+                className="mt-10 text-xs sm:text-sm text-dark-900/45 lg:mt-0 lg:absolute lg:bottom-8 left-6 sm:left-10 lg:left-14"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -104,7 +96,7 @@ export default function Page() {
             </motion.div>
 
             <motion.div
-              className="relative min-h-[540px] lg:min-h-screen overflow-hidden bg-blue-500"
+              className="relative min-h-[540px] lg:min-h-screen overflow-hidden bg-[#123788]"
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
