@@ -48,10 +48,11 @@ export const categories = [
   "event flyer",
   "birthday flyers",
   "flyer design",
-  "packaging design",
+  "packaging and product design",
   "social media design",
   "label design",
   "magazine design",
+  "logo design",
 ];
 
 export const projects = [
@@ -72,7 +73,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: "/PA LOGO.png",
+    image: "/logo-8.png",
     category: "branding design",
   },
   {
@@ -97,7 +98,7 @@ export const projects = [
   },
   {
     id: 9,
-    image: "/NKATE CAKE PICTORIAL.jpg",
+    image: "/label-4.jpg",
     title: "Logo Design for Local Business",
     category: "advertising design",
   },
@@ -109,7 +110,7 @@ export const projects = [
   {
     id: 11,
     image: "/Cereal design.jpg",
-    category: "creative design",
+    category: "packaging and product design",
   },
   {
     id: 12,
@@ -158,48 +159,60 @@ export const projects = [
   },
 
   // Flyer design (16 images) — ids 21..35
-  ...Array.from({ length: 14 }).map((_, i) => ({
+  ...Array.from({ length: 16 }).map((_, i) => ({
     id: 21 + i,
     image: `/flyer-design-${i + 1}.jpg`,
     category: "flyer design",
   })),
 
-  // Event flyers (24 images) — ids 37..60
-  ...Array.from({ length: 4 }).map((_, i) => ({
-    id: 36 + i,
-    image: `/event-flyer-${i + 1}.jpeg`,
-    category: "event flyer",
+  ...Array.from({ length: 3 }).map((_, i) => ({
+    id: 38 + i,
+    image: `/flyer-design-${i + 1}.jpeg`,
+    category: "flyer design",
   })),
 
   ...Array.from({ length: 10 }).map((_, i) => ({
-    id: 47 + i,
+    id: 41 + i,
     image: `/event-flyer-${i + 1}.jpg`,
     category: "event flyer",
   })),
 
-  // Packaging design (5 images) — ids 61..65
-  ...Array.from({ length: 5 }).map((_, i) => ({
-    id: 61 + i,
+  // // Packaging design (5 images) — ids 61..65
+  ...Array.from({ length: 9 }).map((_, i) => ({
+    id: 51 + i,
     image: `/packaging-${i + 1}.jpg`,
-    category: "packaging design",
+    category: "packaging and product design",
   })),
 
-  // Social media design (8 images) — ids 66..73
-  ...Array.from({ length: 8 }).map((_, i) => ({
-    id: 66 + i,
+  ...Array.from({ length: 3 }).map((_, i) => ({
+    id: 60 + i,
+    image: `/packaging-${i + 1}.jpeg`,
+    category: "packaging and product design",
+  })),
+
+  // // Social media design (8 images) — ids 66..73
+  ...Array.from({ length: 6 }).map((_, i) => ({
+    id: 69 + i,
     image: `/social-${i + 1}.jpg`,
     category: "social media design",
   })),
 
-  // Label design (7 images) — ids 74..80
-  ...Array.from({ length: 6 }).map((_, i) => ({
-    id: 74 + i,
+  // // Label design (7 images) — ids 74..80
+  ...Array.from({ length: 3 }).map((_, i) => ({
+    id: 75 + i,
     image: `/label-${i + 1}.jpg`,
     category: "label design",
   })),
+
   ...Array.from({ length: 2 }).map((_, i) => ({
-    id: 81 + i,
+    id: 79 + i,
     image: `/magazine-${i + 1}.jpg`,
     category: "magazine design",
+  })),
+
+  ...Array.from({ length: 9 }).map((_, i) => ({
+    id: 81 + i,
+    image: `/logo-${i + 1}.png`,
+    category: "logo design",
   })),
 ].flat();
